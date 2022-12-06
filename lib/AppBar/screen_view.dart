@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:whatsapp_clone/button_view.dart';
-import 'package:whatsapp_clone/imp_body_view.dart';
-import 'package:whatsapp_clone/status_view.dart';
-
-import 'body_view.dart';
+import 'package:whatsapp_clone/Call%20Page/call_view.dart';
+import 'package:whatsapp_clone/Chat%20Page/imp_body_view.dart';
+import 'package:whatsapp_clone/Community/my_side_view.dart';
+import 'package:whatsapp_clone/Status%20Page/status_view.dart';
 
 class Screen_View extends StatelessWidget {
   const Screen_View({super.key});
@@ -68,10 +65,11 @@ class Screen_View extends StatelessWidget {
           ),
           body: TabBarView(
             children: [
-              Status_View(),
+              My_Side_View(),
               Imp_Body_View(),
               Status_View(),
-              Status_View(),
+              // Status_View(),
+              Call_View(),
             ],
           )),
     );

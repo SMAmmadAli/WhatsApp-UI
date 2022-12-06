@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/screen_view.dart';
+import 'package:whatsapp_clone/AppBar/screen_view.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,8 +1,6 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:whatsapp_clone/Status%20Page/my_status_view.dart';
 import 'package:whatsapp_clone/Status%20Page/other_Status_view.dart';
 
@@ -28,21 +26,21 @@ class Status_View extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 13,
           ),
           FloatingActionButton(
             onPressed: () {},
             backgroundColor: Colors.greenAccent[700],
             elevation: 5,
-            child: Icon(Icons.camera_alt),
+            child: const Icon(Icons.camera_alt),
           ),
         ],
       ),
       body: SingleChildScrollView(
           child: Column(
         children: [
-          MyStatus_View(),
+          const MyStatus_View(),
           CustomContainer('Recent updates'),
           const Other_Status_view(
             name: "Sir Owais",
@@ -84,8 +82,7 @@ class Status_View extends StatelessWidget {
               SeenStatus: 2),
           const Other_Status_view(
               name: 'Anas',
-              imagename:
-                  'https://w7.pngwing.com/pngs/351/66/png-transparent-qurbani-animals-beautiful-cow-eidul-adha-png-thumbnail.png',
+              imagename: 'https://picsum.photos/200/300',
               time: 'Today at, 04:02 PM',
               NumberOfStatus: 1,
               SeenStatus: 1),

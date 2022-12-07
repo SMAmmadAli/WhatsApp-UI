@@ -11,6 +11,7 @@ class Screen_View extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 4,
+      animationDuration: const Duration(seconds: 1),
       child: Scaffold(
           appBar: AppBar(
             backgroundColor: Color.fromRGBO(18, 140, 126, 1),
@@ -46,8 +47,8 @@ class Screen_View extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(right: 10.0),
                 child: Icon(
-                  Icons.camera_alt_rounded,
-                  size: 30,
+                  Icons.camera_alt_outlined,
+                  size: 28,
                 ),
               ),
               Padding(
@@ -63,12 +64,11 @@ class Screen_View extends StatelessWidget {
               ),
             ],
           ),
-          body: TabBarView(
+          body: const TabBarView(
             children: [
               My_Side_View(),
               Imp_Body_View(),
               Status_View(),
-              // Status_View(),
               Call_View(),
             ],
           )),
